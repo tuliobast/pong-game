@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PONG Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>PONG</h1>
+      <div id="difficulty-select">
+        <button id="easy">Fácil</button>
+        <button id="medium">Medio</button>
+        <button id="hard">Difícil</button>
+      </div>
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+      <div id="score">
+        <span id="playerScore">0</span> - <span id="aiScore">0</span>
+      </div>
+      <div id="gameOver" style="display: none;">
+        <h2 id="gameResult"></h2>
+        <button id="restartButton">Jugar de nuevo</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
